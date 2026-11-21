@@ -16,11 +16,11 @@ Static home page for All States Auto Transport with the live pricing tool.
    `BEROCKER_LEAD_KEY` environment variable in Cloudflare (Pages project → Settings → Environment variables),
    or paste it as `DEFAULT_KEY` in `functions/api/quote/[[path]].js`. Do not reuse the shipguy.com keys.
    Until this is set, quotes will not save.
-2. **Phone number and site link.** In `index.html`, find `window.PQ_CONFIG` and fill in `phoneDisplay`,
-   `phoneTel` (`+1…` format), `siteUrl` and `siteLabel`. Every phone link on the page reads from these two phone values.
+2. **Site link.** In `index.html`, find `window.PQ_CONFIG` and fill in `siteUrl` and `siteLabel`.
+   The phone number, (866) 458-7788, is set there too (`phoneDisplay`, `phoneTel`).
 3. **Google Maps key.** `googleMapsKey` in `PQ_CONFIG` is the existing key from the pricing tool. Add this
    site's domain to its referrer restrictions, or swap in a new key. It only powers ZIP suggestions.
-4. **Placeholders.** Search `index.html` for `[YOUR` and replace: USDOT #, MC #, email, address,
+4. **Placeholders.** Search `index.html` for `[YOUR` and replace: email, address,
    deposit policy, personal items policy.
 5. **Footer links.** Privacy, Terms, and Licensing & Insurance currently point to the top of the page.
 
